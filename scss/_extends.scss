@@ -1,0 +1,16 @@
+// * Extends
+// * _______
+// * Create set of CSS properties
+// * Share it with lots of selectors
+// * DRY Sass
+// * @extends .fonts;
+// * @extends %headings;
+
+%fonts {
+    font-family: $font;
+}
+
+.headings {
+    font-family: $heading-font;
+    font-weight: 700;
+}

@@ -1,0 +1,14 @@
+// * Variables
+// * _________
+// * just like js variables
+// * stores information
+// * $ must be used to define a variable
+// * Sass substitutes variable names with values when compiled
+// * body { color: $brand-color-blue; font-family: $font; }
+// *
+
+$brand-color-blue: #6FCBF0;
+$brand-color-orange: #F38130;
+
+$font: 'Merriweather Sans', sans-serif;
+$heading-font: 'Cabin Condensed', sans-serif;

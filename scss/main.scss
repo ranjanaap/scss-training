@@ -1,0 +1,22 @@
+// * Partials
+// * ________
+// * Snippets of css code
+// * Great for modularization of code
+// * Easier to maintain
+// * Naming convention _partial.scss
+// * Underscore lets compiler know its a partial
+// * Used with import directive
+
+// * Import Directive
+// * ________________
+// * CSS has this 
+// * but creates multiple http requests
+// * Sass built on this
+// * compiles partials into a single file, single http request
+
+@import "normalize";
+@import "variables";
+@import "extends";
+@import "mixins";
+@import "content";
+@import "mediaqueries";

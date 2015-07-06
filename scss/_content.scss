@@ -1,0 +1,59 @@
+body {
+    background-image: url(../images/serveimage.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    @extend %fonts;
+}
+
+.wrap {
+    position: relative;
+    max-width: 600px;
+    top:50%;
+    left: 20%;
+    transform: translateY(-50%);
+    /*
+     * Nesting
+     * _______
+     * follow your html nestings
+     * avoid over nesting (3-4 levels deep)
+     *
+     */
+    h1 {
+        margin: 0;
+        padding: 0;
+        @extend .headings;
+        text-transform: uppercase;
+
+        span {
+            display: inline-block;
+            background: rgba($brand-color-blue, .7);
+            color: ghostwhite;
+            padding: 6px 20px;
+            margin-bottom: 10px;
+            font-size: 70px;
+            @include border-radius(6px);
+        }
+    }
+
+    a {
+        position: relative;
+        background: rgba($brand-color-orange, .7);
+        color: ghostwhite;
+        padding: 6px 20px;
+        display: inline-block;
+        font-size: 22px;
+        text-decoration: none;
+        left: 0;
+        transition: all 200ms ease-in-out;
+        @include border-radius(6px);
+
+        &:hover {
+            left: 20px;
+            @include box-shadow(4px, 4px, 8px, rgba(0, 0, 0, 0.075));
+        }
+        &:active {
+            color: darken(ghostwhite, 30);
+        }
+    }
+}
